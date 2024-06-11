@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Page - AuctionBay</title>
+    <link rel="stylesheet" href="trans-styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><img src="/assets/AuctionBay.png" alt=""></h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search in AuctionBay">
+        </div>
+        <div class="nav-icons">
+            <img src="/assets/notification.png" alt="Notification">
+            <img src="/assets/menu.png" alt="Menu">
+            <img src="/assets/shopping-cart.png" alt="Shopping Cart">
+            <img src="/assets/user.png" alt="User">
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="shipping">
+                <div class="address section-box">
+                    <h3 style="color: gray;">Address</h3>
+                    <h5>Rhama Abdul Rojak</h5>
+                    <p style="font-size: 12px;">Frieren’s Enchanted Garden 123 Elven Glade, Eternal Forest Province of Elfenheim, FJ 1001</p>
+                    <button class="change-btn">Change</button>
+                </div>
+                <div class="order section-box">
+                    <h3 style="color: gray;">Order</h3>
+                    <div class="order-item">
+                        <img src="/assets/item1.png" alt="Majalah Drift Tengoku">
+                        <div class="details">
+                            <h5>Majalah Drift Tengoku</h5>
+                            <h4>
+                                <span style="color: gray;">#16278182169</span>
+                                <span> = 2 x Rp330.000,00</span>
+                            </h4>
+                            <p>28</p>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <img src="/assets/item2.png" alt="Novel Grapes of Wrath">
+                        <div class="details">
+                            <h5>Novel "Grapes of Wrath"</h5>
+                            <h4>
+                                <span style="color: gray;">#162781282117</span>
+                                <span> = 1 x Rp200.000,00</span>
+                            </h4>
+                            <p>420</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="shipping-method section-box">
+                    <h4 style="color: gray;">Shipping Method</h4>
+                    <h3>
+                        <span>Regular</span>
+                        <span>Rp8.000</span>
+                    </h3>
+                    <p>Estimated Arrival May 30-31, 2024</p>
+                </div>
+                <div class="payment-method section-box">
+                    <h3 style="color: gray;">Payment Method</h3>
+                    <div class="payment-options">
+                        <button class="payment-btn active" data-method="credit-debit">
+                            <img src="/assets/cc.png" alt="Credit Card"> Credit Card / Debit Card
+                        </button>
+                        <button class="payment-btn" data-method="bank-transfer">
+                            <img src="/assets/atm.png" alt="Bank Transfer"> Bank Transfer
+                        </button>
+                        <button class="payment-btn" data-method="e-money">
+                            <img src="/assets/emoney.png" alt="e-Money"> e-Money
+                        </button>
+                    </div>
+                    <select id="card-number" style="width: 100%;">
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+                </div>
+            </section>
+            <section class="summary section-box">
+                <h2>Order Summary</h2>
+                <p>
+                    <span>Product Subtotal:</span>
+                    <span>Rp860.000,00</span>
+                </p>
+                <p>
+                    <span>Delivery Fee:</span>
+                    <span>Rp8.000,00</span>
+                </p>
+                <p>
+                    <span>Admin Fee:</span>
+                    <span>Rp2.000,00</span>
+                </p>
+                <h3>
+                    <span>Order Total:</span>
+                    <span>Rp870.000,00</span>
+                </h3>
+                <button class="pay-btn">Pay</button>
+            </section>
+            
+        </div>
+    </main>
+
+    <script src="trans-scripts.js"></script>
+</body>
+</html>
